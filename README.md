@@ -26,7 +26,7 @@ const app = express();
  
 app.use('/graphql', bodyParser.json(), graphqlExpress({
     formatError,
-    schema: graphqlSchema
+    schema
 }));
  
 app.listen(3000);
